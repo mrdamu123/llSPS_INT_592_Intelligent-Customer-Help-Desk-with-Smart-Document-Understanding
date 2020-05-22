@@ -1,0 +1,15 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: noderedtjxoz
+  buildpack: sdk-for-nodejs
+  command: npm start
+  disk_quota: 1G
+  memory: 256MB
+  domain: mybluemix.net
+  host: node-red-tjxoz
+  services:
+    - node-red-tjxoz-cloudant-1589817268925-77446
+  env:
+    OPTIMIZE_MEMORY: true
